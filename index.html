@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--========= Author Name =========-->
+    <meta name="author" content="Your Name" />
+    <!--===== Website Description =====-->
+    <meta name="description" content="Website Description" />
+    <!--======= Website Keywords =======-->
+    <meta name="keywords" content="Website keywords" />
+    <!--=========== Favicon ===========-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.svg"
+    />
+    <!--======== Website Title ========-->
+    <title>jQuery Components</title>
+    <!--========== CSS Here ==========-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="custom-cursor">
+    <!-- ########## Start Custom Cursor ########## -->
+    <!-- Cursor 01 -->
+    <div class="cursor-1"></div>
+    <div class="cursor-2"></div>
+    <!-- Cursor 02 -->
+    <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div>
+    <!-- ########## End Custom Cursor ########## -->
+
+    <!-- ########## Start Preloader ########## -->
+    <div class="prealoader">
+      <div class="prealoader__wrap">
+        <div class="preloader__circle"></div>
+        <div class="preloader__circle"></div>
+      </div>
+    </div>
+    <!-- ########## End Preloader ########## -->
+
+    <!-- ############################ START HEADER ############################# -->
+    <header class="header header-sticky">
+      <nav class="container">
+        <div class="header__logo">
+          <a href="index.html"><h1>Components</h1></a>
+        </div>
+        <div class="header__btn-wrap d-flex align-items-center">
+          <button type="button" class="header__search-btn search-toggler">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="16"
+              height="16"
+              fill="#ffffff"
+              role="img"
+            >
+              <circle
+                cx="9.813"
+                cy="9.812"
+                r="9.063"
+                transform="rotate(-23.025 9.813 9.812)"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              ></circle>
+              <path
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M16.221 16.22l7.029 7.03"
+              ></path>
+            </svg>
+          </button>
+          <div class="position-relative">
+            <button type="button" class="header__search-btn toggle-search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="#ffffff"
+                role="img"
+              >
+                <circle
+                  cx="9.813"
+                  cy="9.812"
+                  r="9.063"
+                  transform="rotate(-23.025 9.813 9.812)"
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                ></circle>
+                <path
+                  fill="none"
+                  stroke="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M16.221 16.22l7.029 7.03"
+                ></path>
+              </svg>
+            </button>
+            <div class="drop-down-search">
+              <form
+                method="get"
+                class="drop-down-search__form"
+                action="https://www.codingnepalweb.com/"
+              >
+                <input
+                  class="drop-down-search__input"
+                  type="text"
+                  placeholder="Search"
+                  value=""
+                  name="s"
+                  autocomplete="off"
+                />
+                <input
+                  class="drop-down-search__btn"
+                  type="submit"
+                  value="Search"
+                />
+              </form>
+            </div>
+          </div>
+          <button type="button" class="opened-menu-btn offcanvas-menu-open">
+            <div class="opened-menu-btn__line"></div>
+            <div class="opened-menu-btn__line"></div>
+            <div class="opened-menu-btn__line"></div>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="off-canvars-overlay"></div>
+    <div class="offcanvas-menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="offcanvas-menu__wrapper">
+              <button
+                type="button"
+                class="offcanvas-menu-close d-flex align-items-center justify-content-center"
+              >
+                <img src="assets/images/icons/closed.svg" alt="closed" />
+              </button>
+              <ul class="offcanvas-main-menu">
+                <li class="menu-item-has-children active">
+                  <a href="./index.html">Home</a>
+                  <ul class="sub-menu" style="display: none">
+                    <li><a href="./index.html">Home 1</a></li>
+                    <li><a href="./index-2.html">Home 2</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="about-us.html">About Us</a>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="javascript:void(0)">Pages</a>
+                  <ul class="sub-menu" style="display: none">
+                    <li><a href="./about-us.html">About Us</a></li>
+                    <li><a href="./team-member.html">Team Member</a></li>
+                    <li><a href="./packages.html">Packages</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li>
+                      <a href="./service-details.html">Service Details</a>
+                    </li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./blog-2.html">Blog 2</a></li>
+                    <li><a href="./blog-details.html">Blog Details</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./error.html">404</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="./services.html">Services</a>
+                  <ul class="sub-menu" style="display: none">
+                    <li><a href="./services.html">Services</a></li>
+                    <li>
+                      <a href="./service-details.html">Service Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="./blog.html">Blog</a>
+                  <ul class="sub-menu" style="display: none">
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./blog-2.html">Blog 2</a></li>
+                    <li><a href="./blog-details.html">Blog Details</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children active">
+                  <a href="./contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ############################ END HEADER ############################# -->
+
+    <!-- ############################ START SEARCH POPUP ############################# -->
+    <div class="search-popup">
+      <div class="search-popup__overlay search-toggler"></div>
+      <div class="search-popup__content">
+        <form action="#">
+          <input type="text" id="search" placeholder="Search Here..." />
+          <button type="submit" aria-label="search submit" class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              fill="#ffffff"
+              role="img"
+            >
+              <circle
+                cx="9.813"
+                cy="9.812"
+                r="9.063"
+                transform="rotate(-23.025 9.813 9.812)"
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+              ></circle>
+              <path
+                fill="none"
+                stroke="#ffffff"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M16.221 16.22l7.029 7.03"
+              ></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- ############################ END SEARCH POPUP ############################# -->
+
+    <main>
+      <!-- ############################ START TAb ############################# -->
+      <div class="container">
+        <h2 class="title">Tabs</h2>
+        <div class="tab-wrap">
+          <!-- #### Tab Button #### -->
+          <div class="tab-btn-group">
+            <button type="button" class="tab-btn-group__btn">Tab 01</button>
+            <button type="button" class="tab-btn-group__btn">Tab 02</button>
+            <button type="button" class="tab-btn-group__btn">Tab 03</button>
+          </div>
+          <!-- ######## Tab Content ######## -->
+          <div class="tab-content">
+            <!-- #### Tab Content Item 1 #### -->
+            <div class="tab-content__item">
+              <h4>Tab Content 01</h4>
+              <p>
+                Consectetur adipisicing elit. Neque, repellat facilis totam ab
+                eos distinctio sint atque maiores! Dignissimos, molestiae, rem
+                accusantium iure vitae voluptatum voluptas repudiandae deserunt
+                dolore quis! Quisquam mollitia eius sed.
+              </p>
+            </div>
+            <!-- #### Tab Content Item 2 #### -->
+            <div class="tab-content__item">
+              <h4>Tab Content 02</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Maiores, suscipit, eaque asperiores neque numquam nam possimus
+                dolorem ipsa aspernatur reiciendis?
+              </p>
+            </div>
+            <!-- #### Tab Content Item 3 #### -->
+            <div class="tab-content__item">
+              <h4>Tab Content 03</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Quaerat, excepturi, minima, corporis deserunt quia quae sit
+                officiis labore inventore autem a delectus consequuntur
+                voluptatem modi eligendi similique sed nam vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="tab-area">
+          <!-- #### Tab Button #### -->
+          <div class="tab-button">
+            <button class="tab-button__tablinks">HTML</button>
+            <button class="tab-button__tablinks">CSS</button>
+            <button class="tab-button__tablinks">JS</button>
+          </div>
+          <!-- ######## Tab Content ######## -->
+          <div class="tab-content-wrap">
+            <!-- #### Tab Content Item 1 #### -->
+            <div class="tab-content-wrap__item">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                vero magni nulla corporis quas, fugiat minus vel facere ad
+                consectetur.
+              </p>
+            </div>
+            <!-- #### Tab Content Item 2 #### -->
+            <div class="tab-content-wrap__item">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                vero magni nulla corporis quas, fugiat minus vel facere ad
+                consectetur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                vero magni nulla corporis quas, fugiat minus vel facere ad
+                consectetur.
+              </p>
+              <br />
+            </div>
+            <!-- #### Tab Content Item 3 #### -->
+            <div class="tab-content-wrap__item">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                vero magni nulla corporis quas, fugiat minus vel facere ad
+                consectetur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                vero magni nulla corporis quas, fugiat minus vel facere ad
+                consectetur.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est
+                vero magni nulla corporis quas, fugiat minus vel facere ad
+                consectetur.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ############################ END Tab ############################# -->
+
+      <!-- ############################ START Accordion ############################# -->
+      <div class="container">
+        <h2 class="title">Accordion</h2>
+        <div class="accordion-area">
+          <div class="accordion-item">
+            <!-- If you don't want to keep the first accordion item open, change "true" inside aria-expanded to "false" -->
+            <button class="accordion-item__btn" aria-expanded="true">
+              <p class="accordion-item__title">
+                Why is the moon sometimes out during the day?
+              </p>
+              <span class="accordion-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-item__content">
+              <div class="accordion-item__content-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-item__btn" aria-expanded="false">
+              <p class="accordion-item__title">Why is the sky blue?</p>
+              <span class="accordion-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-item__content">
+              <div class="accordion-item__content-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-item__btn" aria-expanded="false">
+              <p class="accordion-item__title">Will we ever discover aliens?</p>
+              <span class="accordion-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-item__content">
+              <div class="accordion-item__content-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-item__btn" aria-expanded="false">
+              <p class="accordion-item__title">
+                How much does the Earth weigh?
+              </p>
+              <span class="accordion-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-item__content">
+              <div class="accordion-item__content-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-item__btn" aria-expanded="false">
+              <p class="accordion-item__title">How do airplanes stay up?</p>
+              <span class="accordion-item__icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-item__content">
+              <div class="accordion-item__content-box">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                  viverra suspendisse potenti.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ############################ END Accordion ############################# -->
+
+      <!-- ############################ START Pulse Button ############################# -->
+      <div class="container">
+        <h2 class="title mb-5">pulse button</h2>
+        <br />
+        <div
+          class="pulse-wrap d-flex flex-wrap align-items-center justify-content-center mb-5"
+        >
+          <a href="#" class="pluse-btn">
+            <img src="assets/images/icons/play-fill.svg" alt="play-fill" />
+            <i class="pluse-btn__ripple"></i>
+          </a>
+          <a
+            href="#"
+            class="play-btn d-flex align-items-center justify-content-center"
+          >
+            <img src="assets/images/icons/play-fill.svg" alt="play-fill" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+      </div>
+      <!-- ############################ END Pulse Button ############################# -->
+
+      <!-- ############################ START MODAL ############################# -->
+      <div class="container">
+        <h2 class="title">Modal</h2>
+        <div class="text-center">
+          <button class="moadl-trigger">Modal</button>
+          <div class="modal-popup">
+            <div class="modal-popup__wrapper">
+              <div class="modal-popup__content">
+                <button class="modal-popup__close">&times;</button>
+                <h1>
+                  Hello,<br />
+                  I am Saruar Hosen
+                </h1>
+                <p>Front-End Web Developer</p>
+                <p>
+                  I am a professional Front End Web Developer. I'm very
+                  passionate and dedicated to my work. With 3 years of
+                  experience as a professional Front End Web Developer, I have
+                  acquired the skills and knowledge necessary to make your
+                  project a success. I’ve helped so many organizations improve
+                  their online presence and hope I can help you to make an
+                  awesome website for your business. I am passionate to learn
+                  more and get my skill sets more polished and learn new
+                  technologies. I love programming as It's my passion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ############################ END MODAL ############################# -->
+
+      <!-- ############################ START CUSTOM CHECKBOX  ############################# -->
+      <div class="container">
+        <h2 class="title">Custom Checkbox</h2>
+        <!-- Custom Checkbox 01 -->
+        <div
+          class="check-box-wrap d-flex align-items-center justify-content-center flex-wrap mb-4"
+        >
+          <label class="check-box"
+            >One
+            <input type="checkbox" checked="checked" />
+            <span class="check-box__checkmark"></span>
+          </label>
+          <label class="check-box"
+            >Two
+            <input type="checkbox" />
+            <span class="check-box__checkmark"></span>
+          </label>
+          <label class="check-box"
+            >Three
+            <input type="checkbox" />
+            <span class="check-box__checkmark"></span>
+          </label>
+          <label class="check-box"
+            >Four
+            <input type="checkbox" />
+            <span class="check-box__checkmark"></span>
+          </label>
+        </div>
+        <!-- Custom Checkbox 02 -->
+        <div
+          class="check-box-wrap d-flex align-items-center justify-content-center flex-wrap"
+        >
+          <div class="custom-checkbox">
+            <input type="checkbox" id="check-1" />
+            <label for="check-1">Post projects</label>
+          </div>
+          <div class="custom-checkbox">
+            <input type="checkbox" id="check-2" />
+            <label for="check-2">Post projects</label>
+          </div>
+        </div>
+      </div>
+      <!-- ############################ END CUSTOM CHECKBOX  ############################ -->
+
+      <!-- ############################ START DATE PICKER ############################# -->
+      <div class="container position-relative">
+        <h2 class="title">Date bPicker</h2>
+        <div class="d-flex justify-content-center">
+          <input type="date" name="" id="" class="date-picker" />
+        </div>
+      </div>
+      <!-- ############################ END DATE PICKER ############################# -->
+    </main>
+
+    <!-- ############################ START Back To Top Button ############################# -->
+    <div class="scroll-up-btn" title="Go to top">
+      <img
+        src="assets/images/icons/arrow-up.svg"
+        class="arrow-up"
+        alt="arrow-up"
+      />
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      </svg>
+    </div>
+    <button type="button" id="scroll-btn" title="Go to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        fill="#ffffff"
+        viewBox="0 0 384 512"
+      >
+        <path
+          d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+        />
+      </svg>
+    </button>
+    <!-- ############################ END Back To Top Button ############################# -->
+
+    <!--============ JS Here ============-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/backToTop.js"></script>
+  </body>
+</html>
